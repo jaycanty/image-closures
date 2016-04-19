@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FD766BE61A24C5A13FFA444 /* Pods_ImageManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E52A0F9E7C4361E409D9C9D /* Pods_ImageManager.framework */; };
 		769BAADC1CC5B6EB00F02FE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAADB1CC5B6EB00F02FE5 /* AppDelegate.swift */; };
 		769BAADE1CC5B6EB00F02FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAADD1CC5B6EB00F02FE5 /* ViewController.swift */; };
 		769BAAE11CC5B6EB00F02FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769BAADF1CC5B6EB00F02FE5 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		769BAAE61CC5B6EB00F02FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769BAAE41CC5B6EB00F02FE5 /* LaunchScreen.storyboard */; };
 		769BAAF11CC5B6EB00F02FE5 /* ImageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAAF01CC5B6EB00F02FE5 /* ImageManagerTests.swift */; };
 		769BAAFC1CC5B71600F02FE5 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAAFB1CC5B71600F02FE5 /* ImageManager.swift */; };
+		769BAAFE1CC5C04A00F02FE5 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAAFD1CC5C04A00F02FE5 /* PersistanceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		096C059CA4D036D26443EB6D /* Pods-ImageManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageManager/Pods-ImageManager.release.xcconfig"; sourceTree = "<group>"; };
+		6E52A0F9E7C4361E409D9C9D /* Pods_ImageManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		769BAAD81CC5B6EB00F02FE5 /* ImageManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		769BAADB1CC5B6EB00F02FE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		769BAADD1CC5B6EB00F02FE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		769BAAF01CC5B6EB00F02FE5 /* ImageManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerTests.swift; sourceTree = "<group>"; };
 		769BAAF21CC5B6EB00F02FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		769BAAFB1CC5B71600F02FE5 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		769BAAFD1CC5C04A00F02FE5 /* PersistanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		7E59EA33B3ABA96CFDF3A294 /* Pods-ImageManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageManager/Pods-ImageManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD766BE61A24C5A13FFA444 /* Pods_ImageManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +71,8 @@
 				769BAADA1CC5B6EB00F02FE5 /* ImageManager */,
 				769BAAEF1CC5B6EB00F02FE5 /* ImageManagerTests */,
 				769BAAD91CC5B6EB00F02FE5 /* Products */,
+				BBEAC3016F7E3644B987F543 /* Pods */,
+				7DF8615EFE909748C8859A47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +95,7 @@
 				769BAAE41CC5B6EB00F02FE5 /* LaunchScreen.storyboard */,
 				769BAAE71CC5B6EB00F02FE5 /* Info.plist */,
 				769BAAFB1CC5B71600F02FE5 /* ImageManager.swift */,
+				769BAAFD1CC5C04A00F02FE5 /* PersistanceManager.swift */,
 			);
 			path = ImageManager;
 			sourceTree = "<group>";
@@ -99,6 +109,23 @@
 			path = ImageManagerTests;
 			sourceTree = "<group>";
 		};
+		7DF8615EFE909748C8859A47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E52A0F9E7C4361E409D9C9D /* Pods_ImageManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBEAC3016F7E3644B987F543 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E59EA33B3ABA96CFDF3A294 /* Pods-ImageManager.debug.xcconfig */,
+				096C059CA4D036D26443EB6D /* Pods-ImageManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 769BAAF51CC5B6EB00F02FE5 /* Build configuration list for PBXNativeTarget "ImageManager" */;
 			buildPhases = (
+				51B174A2BFDCC83844BEC88D /* 📦 Check Pods Manifest.lock */,
 				769BAAD41CC5B6EB00F02FE5 /* Sources */,
 				769BAAD51CC5B6EB00F02FE5 /* Frameworks */,
 				769BAAD61CC5B6EB00F02FE5 /* Resources */,
+				EFAFC6D1B795E64F380F622F /* 📦 Embed Pods Frameworks */,
+				707DB55D5F60AA15C195ADDC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +225,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51B174A2BFDCC83844BEC88D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		707DB55D5F60AA15C195ADDC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageManager/Pods-ImageManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFAFC6D1B795E64F380F622F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageManager/Pods-ImageManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		769BAAD41CC5B6EB00F02FE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,6 +281,7 @@
 				769BAAFC1CC5B71600F02FE5 /* ImageManager.swift in Sources */,
 				769BAADE1CC5B6EB00F02FE5 /* ViewController.swift in Sources */,
 				769BAADC1CC5B6EB00F02FE5 /* AppDelegate.swift in Sources */,
+				769BAAFE1CC5C04A00F02FE5 /* PersistanceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +408,7 @@
 		};
 		769BAAF61CC5B6EB00F02FE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E59EA33B3ABA96CFDF3A294 /* Pods-ImageManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageManager/Info.plist;
@@ -340,6 +420,7 @@
 		};
 		769BAAF71CC5B6EB00F02FE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 096C059CA4D036D26443EB6D /* Pods-ImageManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImageManager/Info.plist;
@@ -392,6 +473,7 @@
 				769BAAF71CC5B6EB00F02FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		769BAAF81CC5B6EB00F02FE5 /* Build configuration list for PBXNativeTarget "ImageManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +482,7 @@
 				769BAAFA1CC5B6EB00F02FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
