@@ -12,10 +12,9 @@ import Alamofire
 
 class ImageManager
 {
-    static let instance = ImageManager()
+    static let sharedManager = ImageManager()
     
-    func getResizerImage(url resizerURL: String, width: CGFloat, height: CGFloat, closure: ((image: UIImage?) -> ())?)
-    {
+    func getResizerImage(url resizerURL: String, width: CGFloat, height: CGFloat, closure: ((image: UIImage?) -> ())?) {
         let scale = UIScreen.mainScreen().scale
         let url = resizerURL
             .stringByReplacingOccurrencesOfString("{width}", withString: "\(Int(ceil(width * scale)))")
@@ -24,20 +23,17 @@ class ImageManager
         getImage(url, closure: closure)
     }
     
-    func getImage(url: String, closure: ((image: UIImage?) -> ())?)
-    {
-        if let image = PersistenceManager.sharedManager.unarchiveImage(url)
-        {
+    func getImage(url: String, closure: ((image: UIImage?) -> ())?) {
+        
+        if let image = PersistenceManager.sharedManager.unarchiveImage(url) {
             closure?(image: image)
-        }
-        else
-        {
+        } else {
             fetchImage(url, closure: closure)
         }
     }
     
-    private func fetchImage(url: String, closure: ((image: UIImage?)->())?)
-    {
+    private func fetchImage(url: String, closure: ((image: UIImage?)->())?) {
+        
         Alamofire.request(.GET, url)
             .responseJSON {response in
                 
@@ -45,8 +41,7 @@ class ImageManager
                 dispatch_async(dispatch_get_global_queue(priority, 0)) {
                     
                     var image: UIImage?
-                    if let data = response.data
-                    {
+                    if let data = response.data {
                         image = UIImage(data: data)
                     }
                     
@@ -54,8 +49,7 @@ class ImageManager
                         
                         closure?(image: image)
                         
-                        if let img = image
-                        {
+                        if let img = image {
                             PersistenceManager.sharedManager.archiveImage(img, fileName: url)
                         }
                     }
