@@ -20,10 +20,10 @@ class ImageManager
             .stringByReplacingOccurrencesOfString("{width}", withString: "\(Int(ceil(width * scale)))")
             .stringByReplacingOccurrencesOfString("{height}", withString: "\(Int(ceil(height * scale)))")
         
-        getImage(url, closure: closure)
+        getImage(url: url, closure: closure)
     }
     
-    func getImage(url: String, closure: ((image: UIImage?) -> ())?) {
+    func getImage(url url: String, closure: ((image: UIImage?) -> ())?) {
         
         if let image = PersistenceManager.sharedManager.unarchiveImage(url) {
             closure?(image: image)
