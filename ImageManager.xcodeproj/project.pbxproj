@@ -16,6 +16,7 @@
 		769BAAF11CC5B6EB00F02FE5 /* ImageManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAAF01CC5B6EB00F02FE5 /* ImageManagerTests.swift */; };
 		769BAAFC1CC5B71600F02FE5 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAAFB1CC5B71600F02FE5 /* ImageManager.swift */; };
 		769BAAFE1CC5C04A00F02FE5 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAAFD1CC5C04A00F02FE5 /* PersistanceManager.swift */; };
+		769BAB001CC5CF3300F02FE5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BAAFF1CC5CF3300F02FE5 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		769BAAF21CC5B6EB00F02FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		769BAAFB1CC5B71600F02FE5 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		769BAAFD1CC5C04A00F02FE5 /* PersistanceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		769BAAFF1CC5CF3300F02FE5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		7E59EA33B3ABA96CFDF3A294 /* Pods-ImageManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageManager/Pods-ImageManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,14 +90,15 @@
 		769BAADA1CC5B6EB00F02FE5 /* ImageManager */ = {
 			isa = PBXGroup;
 			children = (
+				769BAADF1CC5B6EB00F02FE5 /* Main.storyboard */,
 				769BAADB1CC5B6EB00F02FE5 /* AppDelegate.swift */,
 				769BAADD1CC5B6EB00F02FE5 /* ViewController.swift */,
-				769BAADF1CC5B6EB00F02FE5 /* Main.storyboard */,
+				769BAAFF1CC5CF3300F02FE5 /* TableViewCell.swift */,
 				769BAAE21CC5B6EB00F02FE5 /* Assets.xcassets */,
 				769BAAE41CC5B6EB00F02FE5 /* LaunchScreen.storyboard */,
 				769BAAE71CC5B6EB00F02FE5 /* Info.plist */,
-				769BAAFB1CC5B71600F02FE5 /* ImageManager.swift */,
 				769BAAFD1CC5C04A00F02FE5 /* PersistanceManager.swift */,
+				769BAAFB1CC5B71600F02FE5 /* ImageManager.swift */,
 			);
 			path = ImageManager;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769BAB001CC5CF3300F02FE5 /* TableViewCell.swift in Sources */,
 				769BAAFC1CC5B71600F02FE5 /* ImageManager.swift in Sources */,
 				769BAADE1CC5B6EB00F02FE5 /* ViewController.swift in Sources */,
 				769BAADC1CC5B6EB00F02FE5 /* AppDelegate.swift in Sources */,
